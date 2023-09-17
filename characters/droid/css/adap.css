@@ -1,0 +1,598 @@
+@media screen and (min-width: 2500px){.menu_content li{font-size: 80px;line-height: 150px;}.menu_content{right: 21%;top:28%;}}@media screen and (min-width: 2000px) and (max-width: 2500px){.menu_content li{font-size: 80px;line-height: 160px;}.menu_normal{width: 101%;}}@media screen and (min-width:1200px) and (max-width:1500px){.menu_content li{font-size:40px;line-height:90px}.menu_content{right:18%}}@media screen and (min-width:1000px) and (max-width:1200px){.menu_content li{font-size:40px;line-height:90px}.menu_content{right:18%}}@media screen and (min-width:767px) and (max-width:1000px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:600px) and (max-width:767px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:450px) and (max-width:600px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:0px) and (max-width:450px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:0) and (max-width:767px){.menu_content{display:none;width:100%;height:100%;text-align:center;position:fixed;top:0;left:0;background:#111;z-index:999}.mini_menu_active{animation:menu_anim_active 1s ease}.menu_content ul{margin-top:30vh; padding-left: 0;}@keyframes menu_anim_active{0{left:100%}100%{left:0}}.mini_menu_notActive{animation:menu_anim_notActive 1s ease forwards}@keyframes menu_anim_notActive{0{left:0}100%{left:-100%}}.close_mini_menu{display:block;position:fixed;right:-50px;top:-50px;padding:5px 11px 15px 20px;background:#FFF;color:#111;font-size:30px;font-weight:600;font-family:Arial;border-bottom-left-radius:100%;cursor:pointer;animation:close_mini_menu_anim .3s forwards;animation-delay:.8s}@keyframes close_mini_menu_anim{0{right:-50px;top:-50px}100%{right:0;top:0}}.scrollTopButton{display:none}}@media screen and (min-width:0px) and (max-width:900px){.back_anim_block {height: 49.6vh;}}@media screen and (min-width: 350px) and (max-width: 450px) and (min-height: 780px) and (max-height: 850px){.menu_content li{font-size:35px !important;line-height:100px !important;}.menu_content ul{margin-top:25vh !important;}}
+
+@media screen and (min-width: 2000px) and (max-width: 2600px){
+
+.slide-titles {
+    font-size: 65px;
+}
+
+.back_button{
+    transform: scale(1.2);
+    left: 0px;
+}
+
+.menu_button{
+    transform: scale(1.15);
+    right: 5px;
+}
+
+.menu_button, .back_button {
+    top: 50px;
+}
+
+.menu_button:before {
+    top: -5.5px;
+    right: .1px;
+}
+
+.back_button:after {
+    top: -5.5px;
+    left: .5px;
+}
+
+.more_about_planet p:before {
+    margin-left: -109px;
+}
+
+.more_about_planet p:after {
+    margin-left: 109px;
+}
+
+}
+
+@media screen and (min-width: 2600px){
+.slide-titles {
+    font-size: 105px;
+}
+
+.back_button {
+    transform: scale(2.1);
+    left: 40px;
+}
+
+.menu_button {
+    transform: scale(1.95);
+    right: 45px;
+}
+
+.menu_button, .back_button {
+    top: 120px;
+}
+
+.menu_button:before {
+    top: -5.5px;
+    right: .1px;
+}
+
+.back_button:after {
+    top: -5.5px;
+    left: .5px;
+}
+
+.arrow {
+    font-size: 45px;
+    padding: 20px;
+    border: 3px dashed #111;
+}
+
+.more_about_planet{
+    transform: scale(2);
+    margin-bottom: 40px;
+}
+
+@keyframes active_PR_more_about_planet_anim{
+  0%{bottom: 0px;}
+  100%{bottom: -200px;}
+}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px){
+
+.slide-titles{
+	font-size: 40px;
+}
+
+
+
+.arrow{
+	font-size: 19px;
+	padding: 7px;
+}
+
+.arrow_block{
+	bottom: 10%;
+}
+
+.more_about_planet p {
+	font-size: 24px;
+    padding: 15px 15px;
+}
+
+.more_about_planet p:before {
+	border: 30px solid transparent;
+    border-right: 30px solid #111;
+    border-bottom: 30px solid #111;
+    margin-left: -75px;
+    margin-top: -15px;
+}
+
+.more_about_planet p:after {
+	border: 30px solid transparent;
+    border-left: 30px solid #111;
+    border-bottom: 30px solid #111;
+    margin-left: 79px;
+    margin-top: -15px;
+}
+
+.back_button, .menu_button{
+	font-size: 14px;
+    padding: 10px 19px;
+}
+
+.menu_button{
+	padding-right: 15px;
+}
+
+.menu_button:hover{
+	padding-right: 25px;
+}
+
+.menu_button_image {
+    width: 90%;
+    height: 100%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px){
+
+.active_slide {
+    width: 35%;
+}
+
+.slide-titles{
+    font-size: 42px;
+}
+
+.arrow{
+	font-size: 19px;
+	padding: 7px;
+}
+
+.arrow_block{
+	bottom: 10%;
+}
+
+.arrow_block{
+	width: 91%;
+	left: .4;
+	bottom: 10%;
+}
+
+.prev_active, .next_active {
+    width: 14%;
+}
+
+.more_about_planet p {
+	font-size: 24px;
+    padding: 15px 15px;
+}
+
+.more_about_planet p:before {
+	border: 30px solid transparent;
+    border-right: 30px solid #111;
+    border-bottom: 30px solid #111;
+    margin-left: -75px;
+    margin-top: -15px;
+}
+
+.more_about_planet p:after {
+	border: 30px solid transparent;
+    border-left: 30px solid #111;
+    border-bottom: 30px solid #111;
+    margin-left: 79px;
+    margin-top: -15px;
+}
+
+.back_button, .menu_button{
+	font-size: 13px;
+    padding: 10px 19px;
+}
+
+.menu_button{
+	padding-right: 10px;
+}
+
+.menu_button:hover{
+	padding-right: 20px;
+}
+
+.menu_button_image {
+    width: 80%;
+    height: 90%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+
+.active_slide {
+    width: 53%;
+    position: relative;
+    top: -2vh;
+    left: -1%;
+    animation: active_slide_anim .7s forwards;
+}
+
+#slider_img4{
+    width: 55%;
+    left: -3%;
+}
+
+.slide-title {
+    top: 13vh;
+}
+
+.slide-titles{
+    font-size: 37px;
+}
+
+.arrow{
+    font-size: 20px;
+    padding: 8px;
+    transform: scale(1.3);
+}
+
+.arrow:hover{
+    transform: scale(1.15);
+}
+
+.arrow_block{
+    bottom: 10%;
+}
+
+.arrow_block{
+    width: 86%;
+    left: 7%;
+    bottom: 6%;
+}
+
+.prev_active, .next_active {
+    width: 22%;
+    display: none;
+}
+
+.more_about_planet p {
+    font-size: 30px;
+    padding: 20px 15px;
+}
+
+.more_about_planet p:before {
+    border: 35px solid transparent;
+    border-right: 35px solid #111;
+    border-bottom: 35px solid #111;
+    margin-left: -84px;
+    margin-top: -20px;
+}
+
+.more_about_planet p:after {
+    border: 35px solid transparent;
+    border-left: 35px solid #111;
+    border-bottom: 35px solid #111;
+    margin-left: 94px;
+    margin-top: -20px;
+}
+
+@keyframes active_PR_more_about_planet_anim{
+  0%{bottom: -10px;}
+  100%{bottom: -100px;}
+}
+
+.back_button, .menu_button{
+    font-size: 13px;
+    padding: 10px 19px;
+}
+
+.menu_button{
+    padding-right: 10px;
+}
+
+.menu_button:hover{
+    padding-right: 17px;
+}
+
+.menu_button_image {
+    width: 80%;
+    height: 90%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.menu_content li {
+    font-size: 45px;
+    line-height: 120px;
+}
+
+.back_button:after {
+    top: -6.5px;
+    left: 1px;
+}
+
+.back_button:before {
+    top: -5.7px;
+}
+
+
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px){
+
+.active_slide {
+	width: 62%;
+    position: relative;
+    top: -3vh;
+    animation: active_slide_anim .7s forwards;
+}
+
+.slide-title{
+    top: 16vh;
+}
+
+.slide-titles{
+    font-size: 30px;
+}
+
+.arrow{
+	font-size: 20px;
+	padding: 7px;
+}
+
+.arrow_block{
+	bottom: 10%;
+}
+
+.arrow_block{
+	width: 86%;
+	left: 7%;
+	bottom: 6%;
+}
+
+.prev_active, .next_active {
+    width: 22%;
+    display: none;
+}
+
+.more_about_planet p {
+	font-size: 24px;
+    padding: 15px 15px;
+}
+
+.more_about_planet p:before {
+	border: 30px solid transparent;
+    border-right: 30px solid #111;
+    border-bottom: 30px solid #111;
+    margin-left: -75px;
+    margin-top: -15px;
+}
+
+.more_about_planet p:after {
+	border: 30px solid transparent;
+    border-left: 30px solid #111;
+    border-bottom: 30px solid #111;
+    margin-left: 78px;
+    margin-top: -15px;
+}
+
+.back_button, .menu_button{
+	font-size: 13px;
+    padding: 9px 18px;
+}
+
+.menu_button{
+	padding-right: 0px;
+}
+
+.menu_button:hover{
+	padding-right: 17px;
+}
+
+.menu_button_image {
+    width: 80%;
+    height: 90%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+}
+
+@media screen and (min-width: 0px) and (max-width: 350px){
+
+.active_slide {
+	width: 62%;
+    position: relative;
+    top: -3vh;
+}
+
+.slide-title{
+    top: 16vh;
+}
+
+.slide-titles{
+    font-size: 24px;
+}
+
+.arrow{
+    font-size: 18px;
+    padding: 7px;
+}
+
+.arrow_block{
+	bottom: 10%;
+}
+
+.arrow_block{
+	width: 90%;
+    left: 5%;
+    bottom: 8%;
+}
+
+.prev_active, .next_active {
+    width: 22%;
+    display: none;
+}
+
+.more_about_planet p {
+	font-size: 24px;
+    padding: 15px 15px;
+}
+
+.more_about_planet p:before {
+	border: 28px solid transparent;
+    border-right: 28px solid #111;
+    border-bottom: 28px solid #111;
+    margin-left: -71px;
+    margin-top: -15px;
+}
+
+.more_about_planet p:after {
+	border: 28px solid transparent;
+    border-left: 28px solid #111;
+    border-bottom: 28px solid #111;
+    margin-left: 79px;
+    margin-top: -15px;
+}
+
+.back_button, .menu_button{
+	font-size: 12px;
+    padding: 9px 16px;
+}
+
+.menu_button{
+	padding-right: 0px;
+}
+
+.menu_button:hover{
+	padding-right: 17px;
+}
+
+.menu_button_image {
+    width: 80%;
+    height: 90%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+
+.background_colors{
+   left: -75%;
+   width: 250%;
+}
+
+.active_slide{
+	animation: active_slide_anim .7s forwards;
+}
+}
+
+@media screen and (min-width:0px) and (max-width:768px){
+.left_arrow:hover{
+    background: none;
+    color: #111;
+ }   
+
+.right_arrow:hover{
+    background: none;
+    color: #111;
+}
+
+.menu_content{
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111;
+    z-index: 999;
+}
+
+.mini_menu_active{
+  animation: menu_anim_active 1s ease; 
+}
+
+.menu_content ul{
+    margin-top: 26vh;
+    padding-left: 0px;
+}
+
+@keyframes menu_anim_active{
+    0%{left: 100%;}
+    100%{left: 0;}
+}
+
+.mini_menu_notActive{
+    animation: menu_anim_notActive 1s ease forwards;
+}
+
+@keyframes menu_anim_notActive{
+    0%{left: 0;}
+    100%{left: -100%}
+}
+
+.close_mini_menu{
+    display: block;
+    position: fixed;
+    right: -50px;
+    top: -50px;
+    margin-right: -1px;
+    padding: 10px 15px 15px 20px;
+    background: #FFF;
+    color: #111;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: Arial;
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+    animation: close_mini_menu_anim .3s forwards;
+    animation-delay: .8s;
+}
+
+@keyframes close_mini_menu_anim{
+    0%{right: -50px;top: -50px;}
+    100%{right: 0px;top: 0px;}
+}
+}

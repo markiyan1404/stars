@@ -1,0 +1,612 @@
+*{
+	box-sizing: border-box;
+}
+
+@font-face {
+   font-family: Star Jedi;
+   src: local(Starjedi), url(../../fonts/Starjedi.ttf); /* Для остальных браузеров */
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+}
+
+body{
+ background-image: url(../../main/img/menu_background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*menu content*/
+.conteiner_1{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+	height: 100vh;
+	background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.content_main_content{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+
+.background-border{
+	z-index: 9;
+}
+
+.menu_active{
+    transform-origin: 0% 50%;
+    outline: 10px solid #FF1B16;
+    animation: menu_active .8s forwards; 
+    cursor: pointer;
+    height: 100%;
+}
+
+@keyframes menu_active{
+	0%{transform: translateZ(0px) translateX(0%) rotateY(0deg);}
+	100%{transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);}
+}
+
+.menu_normal{
+  overflow: hidden;
+	outline: 10px solid #FF1B16;
+	animation: menu_dont_active .8s forwards; 
+}
+
+@keyframes menu_dont_active{
+	0%{transform: translateZ(-1800px) translateX(-50%) rotateY(45deg); transform-origin: 0% 50%;}
+	100%{transform: translateZ(0px) translateX(0%) rotateY(0deg); transform-origin: 0% 0%;}
+}
+
+.menu_close_block{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 1000;
+}
+
+.menu_content{
+	display: none;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    z-index: 2;
+}
+
+.menu_content li{
+	line-height: 120px;
+}
+
+.menu_content li{
+	color: #FFF;
+	font-size: 60px;
+	font-family: Star Jedi;
+	list-style: none;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.menu_li_active{
+	color: #CA0000;
+	border-bottom: 5px solid #CA0000;
+}
+
+.menu_li{
+	font-style: normal;
+	transition: .3s;
+}
+
+.menu_li:hover{
+	color: #FF0000;
+	transition: .3s;
+}
+
+/*menu button*/
+
+.menu_button{
+	display: none;
+    justify-content: flex-end;
+    position: relative;
+    top: 10px;
+    right: 10%;
+}
+
+.menu_button p{
+	color: #111;
+	font-family: Tahoma;
+    font-size: 18px;
+    position: relative;
+    top: 5px;
+	text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+
+.menu_button{
+	display: inline-flex;
+    position: absolute;
+	top: 1.5vh;
+    right: 10%;
+    cursor: pointer;
+	transition: .3s;
+}
+
+.menu_button:hover{
+	transform: scale(.9);
+	transition: .3s;
+}
+
+.menu_image_block{
+	transform: scale(.8);
+}
+  
+/*menu button 2*/
+.menu_slide_active{
+	display: flex;
+	justify-content: flex-end;
+	z-index: 2;
+}
+
+.menu_button_slide_active {
+  position: fixed;
+  top: 45px;
+  right: -20px;
+  display: none;
+  align-items: center;
+  font-size: 17px;
+  border: none;
+  color: #111;
+  background-color: #FFF;
+  padding: 10px 20px;
+  border-radius: 6px 0 0px 6px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-family: Tahoma;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.menu_button_slide_active:hover{
+	padding-right: 30px;
+	transition: .2s;
+}
+
+.menu_button_image_slide_active{
+	width: 40px;
+    height: 25px;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.menu_button_slide_active p{
+	margin: 0;
+	padding: 0;
+}
+
+.menu_button_slide_active:before,
+.menu_button_slide_active:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.menu_button_slide_active:before {
+  top: -6px;
+  right: 0;
+  width: 40px;
+  background-color: #FFF;
+  height: 6px;
+  border-radius: 0 0px 0 0;
+}
+
+.menu_button_slide_active:after {
+  width: 0;
+  height: 0;
+  top: -6px;
+  right: 40px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid #FFF;
+  border-right: 12px solid #FFF;
+  border-left: 6px solid transparent;
+}
+
+/*content*/
+.content_title{
+	color: #111;
+	font-family: Star Jedi;
+	font-size: 32px;
+	width: 100px;
+	line-height: 35px;
+  margin-left: 2%;
+}
+
+.background-border{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.photos_main_block{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.photos_flex-div{
+	width: 100%;
+	margin: 12vh auto;
+}
+
+.line_1, .line_2{
+	display: flex;
+	justify-content: center;
+  flex-wrap: wrap;
+	width: 100%;
+	position: absolute;
+}
+
+.line_2{
+	margin-top: 12%;
+}
+
+.photos_blocks{
+  transform: scale(1);
+	width: 28%;
+	z-index: 99;
+	transition: .3s;
+	cursor: pointer;
+}
+
+@keyframes test{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.personajes_BG{
+	width: 100%;
+}
+
+.photos_block1{
+	margin-right: 10%;
+  transition: .5s;
+}
+
+.photos_blocks:hover{
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.photos_block2{
+	margin-left: 10%;
+	transition: .3s;
+}
+
+.photos_block3{
+  margin-top: -26vh;
+}
+
+.personajes{
+	width: 60%;
+  position: absolute;
+  transition: .4s;
+}
+
+.personajes{
+	opacity: 0;
+}
+
+.sith{
+    left: 16%;
+    margin-top: 8vh;
+    transition: .3s;
+}
+
+.sith_active{
+  opacity: 0;
+}
+
+.photos_block1:hover .sith{
+  transform: scale(1.2);
+  left: 12%;
+  top: 2vh;
+  transition: .5s;
+}
+
+.jedi{ 
+    right: 22%;
+    margin-top: 10vh;
+    transform: .3s;
+}
+
+.jedi_active{
+  opacity: 0;
+}
+
+.link_sith_active .sith{transform: scale(1.1);opacity: 1 !important;}
+.link_jedi_active .jedi{transform: scale(1.1);opacity: 1 !important;}
+.link_droid_active .droid{transform: scale(1.1);opacity: 1 !important;}
+
+.photos_block2:hover .jedi{
+  transform: scale(1.2);
+  right: 12%;
+  top: 2vh;
+  transition: .5s;
+}
+
+.droid{
+    left: 20%;
+    margin-top: 18vh;
+    transition: .3s;
+}
+
+.droid_active{
+  opacity: 0;
+}
+
+.photos_block3:hover .droid{
+  transform: scale(1.2);
+  top: 2vh;
+  transition: .5s;
+}
+
+.menu_slide_active{
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.menu_button_slide_active {
+  position: fixed;
+  top: 45px;
+  right: -20px;
+  display: none;
+  align-items: center;
+  font-size: 17px;
+  border: none;
+  color: #FFF;
+  background-color: #111;
+  padding: 10px 20px;
+  border-radius: 6px 0 0px 6px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-family: Tahoma;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.menu_button_slide_active:hover{
+  padding-right: 30px;
+  transition: .2s;
+}
+
+.menu_button_image_slide_active{
+  width: 40px;
+    height: 25px;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.menu_button_slide_active p{
+  margin: 0;
+  padding: 0;
+}
+
+.menu_button_slide_active:before,
+.menu_button_slide_active:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.menu_button_slide_active:before {
+  top: -6px;
+  right: 0;
+  width: 40px;
+  background-color: #111;
+  height: 6px;
+  border-radius: 0 0px 0 0;
+}
+
+.menu_button_slide_active:after {
+  width: 0;
+  height: 0;
+  top: -6px;
+  right: 40px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid #111;
+  border-right: 12px solid #111;
+  border-left: 6px solid transparent;
+}
+
+.line_1{
+  transform: scale(0);
+  z-index: 99;
+  animation: line_1_anim 1.3s forwards;
+  animation-delay: .3s;
+}
+
+@keyframes line_1_anim{
+  0%{transform: scale(0);}
+  100%{transform: scale(1);}
+}
+
+/*loader*/
+
+.show_animation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  animation: show_animatin_anim 1s forwards;
+}
+
+@keyframes show_animatin_anim{
+  0%{background: #111;}
+  100%{background: none;}
+}
+
+.back_anim_block_1_fadeOut{
+  top: 0;
+  left: 0;
+  animation: back_anim_block_1_anim_fadeOut 1.5s;
+}
+
+@keyframes back_anim_block_1_anim_fadeOut{
+  0%{top: 0; left: 0;}
+  100%{top: -50%; left: -50%;}
+}
+
+.back_anim_block_2_fadeOut{
+   top: 0;
+   right: 0;
+   animation: back_anim_block_2_anim_fadeOut 1.5s;
+}
+
+@keyframes back_anim_block_2_anim_fadeOut{
+  0%{top: 0; right: 0;}
+  100%{top: -50%; right: -50%;}
+}
+
+.back_anim_block_3_fadeOut{
+  bottom: 0;
+  left: 0;
+  animation: back_anim_block_3_anim_fadeOut 1.5s;
+}
+
+@keyframes back_anim_block_3_anim_fadeOut{
+  0%{bottom: 0; left: 0;}
+  100%{bottom: -50%; left: -50%;}
+}
+
+.back_anim_block_4_fadeOut{
+  bottom: 0;
+  right: 0;
+  animation: back_anim_block_4_anim_fadeOut 1.5s;
+}
+
+@keyframes back_anim_block_4_anim_fadeOut{
+  0%{bottom: 0; right: 0;}
+  100%{bottom: -50%; right:-50%;}
+}
+
+.back_animation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  animation: back_animation_anim 1s forwards; 
+  display: none;
+}
+
+@keyframes back_animation_anim{
+  0%{background: none;}
+  100%{background: #111;}
+}
+
+.back_anim_block{
+  width: 49.5%;
+  background: #FFF;
+  position: fixed;
+  height: 49vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_anim_block img{
+   width: 20%;
+   opacity: .1;
+}
+
+.back_anim_block_1{
+  top: 0;
+  left: 0;
+  animation: back_anim_block_1_anim 1.5s;
+}
+
+@keyframes back_anim_block_1_anim{
+  0%{top: -50%; left: -50%;}
+  50%{top: 0; left: 0; transform: rotate(0);}
+  100%{transform: rotate(0deg);}
+}
+
+.back_anim_block_2{
+   top: 0;
+   right: 0;
+   animation: back_anim_block_2_anim 1.5s;
+}
+
+@keyframes back_anim_block_2_anim{
+  0%{top: -50%; right: -50%;}
+  50%{top: 0; right: 0; transform: rotate(0);}
+  100%{transform: rotate(0deg);}
+}
+
+.back_anim_block_3{
+  bottom: 0;
+  left: 0;
+  animation: back_anim_block_3_anim 1.5s;
+}
+
+@keyframes back_anim_block_3_anim{
+  0%{bottom: -50%; left: -50%;}
+  50%{bottom: 0; left: 0; transform: rotate(0);} 
+  100%{transform: rotate(0deg);}
+}
+
+.back_anim_block_4{
+  bottom: 0;
+  right: 0;
+  animation: back_anim_block_4_anim 1.5s;
+}
+
+@keyframes back_anim_block_4_anim{
+  0%{bottom: -50%; right: -50%;}
+  50%{bottom: 0; right: 0; transform: rotate(0);} 
+  100%{transform: rotate(0deg);}
+}
