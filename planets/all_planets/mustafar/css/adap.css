@@ -1,0 +1,913 @@
+@media screen and (min-width: 2500px){.menu_content li{font-size: 80px;line-height: 150px;}.menu_content{right: 21%;top:28%;}}@media screen and (min-width: 2000px) and (max-width: 2500px){.menu_content li{font-size: 80px;line-height: 160px;}.menu_normal{width: 101%;}}@media screen and (min-width:1200px) and (max-width:1500px){.menu_content li{font-size:40px;line-height:90px}.menu_content{right:18%}}@media screen and (min-width:1000px) and (max-width:1200px){.menu_content li{font-size:40px;line-height:90px}.menu_content{right:18%}}@media screen and (min-width:767px) and (max-width:1000px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:600px) and (max-width:767px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:450px) and (max-width:600px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:0px) and (max-width:450px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:0) and (max-width:767px){.menu_content{display:none;width:100%;height:100%;text-align:center;position:fixed;top:0;left:0;background:#111;z-index:999}.mini_menu_active{animation:menu_anim_active 1s ease}.menu_content ul{margin-top:30vh; padding-left: 0;}@keyframes menu_anim_active{0{left:100%}100%{left:0}}.mini_menu_notActive{animation:menu_anim_notActive 1s ease forwards}@keyframes menu_anim_notActive{0{left:0}100%{left:-100%}}.close_mini_menu{display:block;position:fixed;right:-50px;top:-50px;padding:5px 11px 15px 20px;background:#FFF;color:#111;font-size:30px;font-weight:600;font-family:Arial;border-bottom-left-radius:100%;cursor:pointer;animation:close_mini_menu_anim .3s forwards;animation-delay:.8s}@keyframes close_mini_menu_anim{0{right:-50px;top:-50px}100%{right:0;top:0}}.scrollTopButton{display:none}}@media screen and (min-width:0px) and (max-width:900px){.back_anim_block {height: 49.6vh;}}@media screen and (min-width: 350px) and (max-width: 450px) and (min-height: 780px) and (max-height: 850px){.menu_content li{font-size:35px !important;line-height:100px !important;}.menu_content ul{margin-top:25vh !important;}}
+
+@media screen and (min-width: 2000px) and (max-width: 2600px){
+
+.planet_name {
+    font-size: 65px;
+}
+
+.title_name_p_2 {
+    font-size: 40px;
+}
+
+.clone_reading {
+    width: 60%;
+}
+
+.clone_maska {
+    left: -94%;
+    top: 4.5vh;   
+}
+
+.holoContainer {
+    left: 51%;
+    width: 118%;
+}
+
+.p_2{
+    font-size: 26px;
+}
+
+.clone_maska {
+    width: 18%;
+    left: -94%;
+    top: 5.4vh;
+}
+
+.back_button a{
+    transform: scale(1.5);
+    margin-left: 1%;
+}
+
+.menu_button_slide_active{
+    transform: scale(1.35);
+    padding: 12px 20px;
+    margin-right: .4%;  
+}
+
+.menu_button_image_slide_active {
+    margin-left: 10px;
+}
+
+.back_button, .menu_button_slide_active{
+    top: 85px;
+}
+
+.back_button:after {
+    top: -5.5px;
+}
+
+.menu_button_slide_active:before {
+    top: -5.5px;
+}
+
+.menu_button_slide_active{
+    right: -200px;
+}
+
+@keyframes menu_button_anim{
+    0%{right: -200px;}
+    100%{right: 0;}
+}
+
+@keyframes back_button_anim{
+    0%{left: -200px;}
+    100%{left: -10px;}
+}
+}
+
+@media screen and (min-width: 2600px){
+
+.planet_name {
+    font-size: 65px;
+}
+
+.title_name_p_2 {
+    font-size: 70px;
+}
+
+.clone_reading {
+    width: 60%;
+}
+
+.clone_maska {
+    left: -94%;
+    top: 4.5vh;   
+}
+
+.holoContainer {
+    left: 51%;
+    width: 118%;
+}
+
+.p_2{
+    font-size: 26px;
+}
+
+.clone_maska {
+    width: 18%;
+    left: -94%;
+    top: 5.4vh;
+}
+
+.back_button a{
+    transform: scale(2.1);
+    margin-left: 1%;
+}
+
+.menu_button_slide_active{
+    transform: scale(1.35);
+    padding: 12px 20px;
+    margin-right: .4%;  
+}
+
+.menu_button_image_slide_active {
+    margin-left: 10px;
+}
+
+.back_button, .menu_button_slide_active{
+    top: 85px;
+}
+
+.back_button:after {
+    top: -5.5px;
+    left: .5px;
+}
+
+.menu_button_slide_active:before {
+    top: -5.5px;
+}
+
+.menu_button_slide_active{
+    right: -200px;
+}
+
+@keyframes menu_button_anim{
+    0%{right: -200px;}
+    100%{right: 20px;}
+}
+
+@keyframes back_button_anim{
+    0%{left: -200px;}
+    100%{left: -10px;}
+}
+
+.planet{
+    width: 200%;
+}
+
+.p_2 {
+    font-size: 30px;
+}
+
+.clone_reading {
+    top: 11vh;
+}
+
+.holoContainer {
+    left: 53%;
+}
+
+.menu_button_slide_active{
+    transform: scale(1.8);
+}
+
+.menu_content li {
+    font-size: 120px;
+    line-height: 230px;
+}
+
+.menu_content {
+    right: 20%;
+    top: 27%;
+}
+}
+
+.show_animation{z-index: 999999;}.back_animation{z-index: 999999;}
+
+@media screen and (min-width: 350px) and (max-width: 900px){.planet_name {padding: 1% 10% 1.5% 10%;}} 
+@media screen and (min-width: 0px) and (max-width: 350px){.planet_name {padding: 5% 12% 2.5% 12%;}} 
+
+@media screen and (min-width:1200px) and (max-width:1500px){
+.planet_name {
+    font-size: 30px;
+}
+
+.planet_name:before {
+    border: 54px solid transparent;
+    border-right: 54px solid #FFF;
+    border-bottom: 54px solid #FFF;
+    margin-left: -108px;
+}
+
+.planet_name:after {
+    border: 54px solid transparent;
+    border-bottom: 54px solid #FFF;
+    border-left: 54px solid #FFF;
+    margin-left: 191px;
+}
+
+.planet_and_text_perentBlock {
+    margin-top: 17vh;
+}
+
+.planet {
+    margin-top: 8vh;
+}
+
+.menu_button_slide_active, .back_button{
+    font-size: 15px;
+}
+
+.holoContainer {
+    left: 47.6%;
+    width: 105%;
+    transform: scale(1.01);
+}
+
+.hologram-block {
+    left: -0.2%;
+}
+
+}
+
+@media screen and (min-width:900px) and (max-width:1200px){
+.planet_name {
+    font-size: 30px;
+}
+
+.planet_name:before {
+    border: 54px solid transparent;
+    border-right: 54px solid #FFF;
+    border-bottom: 54px solid #FFF;
+    margin-left: -108px;
+}
+
+.planet_name:after {
+    border: 54px solid transparent;
+    border-bottom: 54px solid #FFF;
+    border-left: 54px solid #FFF;
+    margin-left: 191px;
+}
+
+.planet_and_text_perentBlock {
+    margin-top: 21vh;
+}
+
+.planet {
+    margin-top: 8vh;
+}
+
+.menu_button_slide_active, .back_button{
+    font-size: 15px;
+}
+
+.holoContainer {
+    top: -0.2vh;
+    left: 44%;
+    width: 106%;
+    transform: scale(1.01);
+}
+
+.clone_reading {
+    top: 6.2vh;
+}
+
+.title_name_p_2{
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+}
+
+@media screen and (min-width:767px) and (max-width:900px){
+.planet_name {
+    font-size: 30px;
+}
+
+.planet_name:before {
+    border: 54px solid transparent;
+    border-right: 54px solid #FFF;
+    border-bottom: 54px solid #FFF;
+    margin-left: -108px;
+}
+
+.planet_name:after {
+    border: 54px solid transparent;
+    border-bottom: 54px solid #FFF;
+    border-left: 54px solid #FFF;
+    margin-left: 191px;
+}
+
+.planet_and_text_perentBlock {
+    margin-top: 25vh;
+}
+
+.planet {
+    width: 35%;
+    margin-top: 0vh;
+}
+
+.menu_button_slide_active, .back_button{
+    font-size: 15px;
+}
+
+.holoContainer {
+    top: 2.5vh;
+    left: 40%;
+    width: 110%;
+    transform: scale(1.01);
+}
+
+.planet_and_text_perentBlock{
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+
+.text {
+    border-radius: 10px;
+    width: 70%;
+    padding: 5% 3% 2% 3%;
+    margin-top: 11vh;
+    margin-right: 28%;
+    text-align: center;
+}
+
+.title_name_active {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.text_block {
+    margin-left: 20%;
+    position: relative;
+    top: -25vh;
+}
+
+.clone_reading {
+    width: 35%;
+    left: 45%;
+}
+
+.errorPageRap {
+    text-align: center;
+    width: 33.5%;
+    position: relative;
+    top: 2vh;
+    left: 26.5%;
+}
+
+.title_name{
+    text-align: center;
+}
+
+.text_p{
+    font-size: 11px;
+}
+
+.hologram-block, .clone_reading{
+    display: none;
+}
+
+.back_button, .menu_button_slide_active {
+    font-size: 14px;
+    padding: 10px 19px;
+}
+
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+.planet_name {
+    font-size: 25px;
+}
+
+.planet_name:before {
+    border: 45px solid transparent;
+    border-right: 45px solid #FFF;
+    border-bottom: 45px solid #FFF;
+    margin-left: -90px;
+}
+
+.planet_name:after {
+    border: 45px solid transparent;
+    border-bottom: 45px solid #FFF;
+    border-left: 45px solid #FFF;
+    margin-left: 159px;
+}
+
+.planet_and_text_perentBlock {
+    margin-top: 25vh;
+}
+
+.planet {
+    margin-left: 32%;
+    width: 48%;
+    margin-top: 0vh;
+}
+
+.menu_button_slide_active, .back_button{
+    font-size: 12px;
+}
+
+.menu_button_slide_active:hover {
+    padding-right: 15px;
+    transition: .2s;
+}
+
+.holoContainer {
+    top: 2.5vh;
+    left: 40%;
+    width: 110%;
+    transform: scale(1.01);
+}
+
+.planet_and_text_perentBlock{
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+
+.text {
+    border-radius: 10px;
+    width: 80%;
+    padding: 5% 3% 2% 3%;
+    margin-top: 17vh;
+    text-align: center;
+    margin-right: 18%;
+}
+
+.title_name_active {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.text_block {
+    margin-left: 15%;
+    position: relative;
+    top: -25vh;
+}
+
+.clone_reading {
+    width: 35%;
+    left: 45%;
+}
+
+.errorPageRap {
+    text-align: center;
+    width: 33.5%;
+    position: relative;
+    top: 2vh;
+    left: 26.5%;
+}
+
+.title_name {
+    text-align: center;
+}
+
+.text_p {
+    font-size: 14px;
+}
+
+.hologram-block, .clone_reading{
+    display: none;
+}
+
+.menu_content li {
+    font-size: 45px;
+    line-height: 120px;
+}
+
+.back_button, .menu_button_slide_active {
+    font-size: 14px;
+}
+
+.back_button:after {
+    top: -5.5px;
+    left: 1px;
+}
+
+.back_button:before {
+    top: -5px;
+}
+
+.menu_button_slide_active:after {
+    top: -5px;
+}
+
+.menu_button_slide_active:before {
+    top: -5.5px;
+    right: 1px;
+}
+}
+
+@media screen and (min-width:400px) and (max-width:600px){
+.planet_name {
+    font-size: 25px;
+}
+
+.planet_name:before {
+    border: 45px solid transparent;
+    border-right: 45px solid #FFF;
+    border-bottom: 45px solid #FFF;
+    margin-left: -90px;
+}
+
+.planet_name:after {
+    border: 45px solid transparent;
+    border-bottom: 45px solid #FFF;
+    border-left: 45px solid #FFF;
+    margin-left: 159px;
+}
+
+.planet_and_text_perentBlock {
+    margin-top: 25vh;
+}
+
+.planet {
+    margin-left: 25%;
+    width: 50%;
+    margin-top: -1vh;
+}
+
+.menu_button_slide_active, .back_button{
+    font-size: 12px;
+}
+
+.menu_button_slide_active:hover {
+    padding-right: 15px;
+    transition: .2s;
+}
+
+.holoContainer {
+    top: 2.5vh;
+    left: 40%;
+    width: 110%;
+    transform: scale(1.01);
+}
+
+.planet_and_text_perentBlock{
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+
+.text {
+    border-radius: 10px;
+    width: 80%;
+    padding: 5% 3% 2% 3%;
+    margin-top: 15vh;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.title_name_active {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.text_block {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -14vh;
+}
+
+.clone_reading {
+    width: 35%;
+    left: 45%;
+}
+
+.errorPageRap {
+    text-align: center;
+    width: 33.5%;
+    position: relative;
+    top: 2vh;
+    left: 26.5%;
+}
+
+.title_name{
+    text-align: center;
+}
+
+.text_p{
+    font-size: 11px;
+}
+
+.hologram-block, .clone_reading{
+    display: none;
+}
+}
+
+@media screen and (min-width:350px) and (max-width:400px){
+.planet_name {
+    font-size: 25px;
+}
+
+.planet_name:before {
+    border: 45px solid transparent;
+    border-right: 45px solid #FFF;
+    border-bottom: 45px solid #FFF;
+    margin-left: -90px;
+}
+
+.planet_name:after {
+    border: 45px solid transparent;
+    border-bottom: 45px solid #FFF;
+    border-left: 45px solid #FFF;
+    margin-left: 159px;
+}
+
+.planet_and_text_perentBlock {
+    margin-top: 25vh;
+}
+
+.planet {
+    margin-left: 18%;
+    width: 70%;
+    margin-top: 0vh;
+}
+
+.menu_button_slide_active, .back_button{
+    font-size: 12px;
+}
+
+.menu_button_slide_active:hover {
+    padding-right: 15px;
+    transition: .2s;
+}
+
+.holoContainer {
+    top: 2.5vh;
+    left: 40%;
+    width: 110%;
+    transform: scale(1.01);
+}
+
+.planet_and_text_perentBlock{
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+
+.text {
+    border-radius: 10px;
+    width: 90%;
+    padding: 5% 3% 2% 3%;
+    margin-top: 20vh;
+    text-align: center;
+    margin-right: 0;
+}
+
+.title_name_active {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.text_block {
+    margin-left: 0%;
+    position: relative;
+    top: -25vh;
+}
+
+.clone_reading {
+    width: 35%;
+    left: 45%;
+}
+
+.errorPageRap {
+    text-align: center;
+    width: 33.5%;
+    position: relative;
+    top: 2vh;
+    left: 26.5%;
+}
+
+.title_name{
+    text-align: center;
+}
+
+.text_p{
+    font-size: 11px;
+}
+
+.hologram-block, .clone_reading{
+    display: none;
+}
+
+.back_button, .menu_button_slide_active {
+    top: 75px;
+}
+
+.back_button, .menu_button_slide_active {
+    font-size: 12px;
+    padding: 7px 16px;
+}
+
+}
+
+@media screen and (min-width:0px) and (max-width:350px){
+.planet_name {
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.planet_name:before {
+    border: 36px solid transparent;
+    border-right: 36px solid #FFF;
+    border-bottom: 36px solid #FFF;
+    margin-left: -71px;
+}
+
+.planet_name:after {
+    border: 36px solid transparent;
+    border-bottom: 36px solid #FFF;
+    border-left: 36px solid #FFF;
+    margin-left: 128px;
+}
+
+.planet_and_text_perentBlock {
+    margin-top: 25vh;
+}
+
+.planet {
+    margin-left: 23%;
+    width: 60%;
+    margin-top: 2vh;
+}
+
+.menu_button_slide_active, .back_button{
+    font-size: 12px;
+}
+
+.menu_button_slide_active:hover {
+    padding-right: 15px;
+    transition: .2s;
+}
+
+.holoContainer {
+    top: 2.5vh;
+    left: 40%;
+    width: 110%;
+    transform: scale(1.01);
+}
+
+.planet_and_text_perentBlock{
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+
+.text {
+    border-radius: 10px;
+    width: 90%;
+    padding: 5% 3% 2% 3%;
+    margin-top: 20vh;
+    margin-right: 18%;
+    text-align: center;
+    margin-right: 0;
+}
+
+.title_name_active {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.text_block {
+    margin-left: 0%;
+    position: relative;
+    top: -25vh;
+}
+
+.clone_reading {
+    width: 35%;
+    left: 45%;
+}
+
+.errorPageRap {
+    text-align: center;
+    width: 33.5%;
+    position: relative;
+    top: 2vh;
+    left: 26.5%;
+}
+
+.title_name{
+    text-align: center;
+}
+
+.text_p{
+    font-size: 9px;
+}
+
+.hologram-block, .clone_reading{
+    display: none;
+}
+
+.back_button, .menu_button_slide_active {
+    top: 75px;
+}
+
+.back_image_block {
+    font-size: 14px;
+}
+
+.back_button, .menu_button_slide_active {
+    font-size: 12px;
+    padding: 7px 16px;
+}
+
+}
+
+@media screen and (min-width:0px) and (max-width:768px){
+.left_arrow:hover{
+    background: none;
+    color: #FFF;
+ }   
+
+.right_arrow:hover{
+    background: none;
+    color: #FFF;
+}   
+
+.menu_content{
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111;
+    z-index: 999;
+}
+
+.mini_menu_active{
+  animation: menu_anim_active 1s ease; 
+}
+
+.menu_content ul{
+    margin-top: 26vh;
+    padding-left: 0px;
+}
+
+@keyframes menu_anim_active{
+    0%{left: 100%;}
+    100%{left: 0;}
+}
+
+.mini_menu_notActive{
+    animation: menu_anim_notActive 1s ease forwards;
+}
+
+@keyframes menu_anim_notActive{
+    0%{left: 0;}
+    100%{left: -100%}
+}
+
+.close_mini_menu{
+    display: block;
+    position: fixed;
+    right: -50px;
+    top: -50px;
+    margin-right: -1px;
+    padding: 10px 15px 15px 20px;
+    background: #FFF;
+    color: #111;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: Arial;
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+    animation: close_mini_menu_anim .3s forwards;
+    animation-delay: .8s;
+}
+
+@keyframes close_mini_menu_anim{
+    0%{right: -50px;top: -50px;}
+    100%{right: 0px;top: 0px;}
+}
+
+.scrollTopButton{
+    display: none;
+}
+
+.close_video{
+    font-size: 20px;
+    padding: 3px 10px;
+}
+
+.scrollTopButton:hover{
+    background: none !important;
+}
+}
+
+@media screen and (min-width:0px) and (max-width:900px){
+
+.mobile_text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.planet{
+    margin-left: 4% !important;
+}
+
+}
