@@ -1,0 +1,598 @@
+@media screen and (min-width: 2500px){.menu_content li{font-size: 80px;line-height: 150px;}.menu_content{right: 21%;top:28%;}}@media screen and (min-width: 2000px) and (max-width: 2500px){.menu_content li{font-size: 80px;line-height: 160px;}.menu_normal{width: 101%;}}@media screen and (min-width:1200px) and (max-width:1500px){.menu_content li{font-size:40px;line-height:90px}.menu_content{right:18%}}@media screen and (min-width:1000px) and (max-width:1200px){.menu_content li{font-size:40px;line-height:90px}.menu_content{right:18%}}@media screen and (min-width:767px) and (max-width:1000px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:600px) and (max-width:767px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:450px) and (max-width:600px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:0px) and (max-width:450px){.menu_content li{font-size:30px;line-height:70px}.menu_content{right:18%}}@media screen and (min-width:0) and (max-width:767px){.menu_content{display:none;width:100%;height:100%;text-align:center;position:fixed;top:0;left:0;background:#111;z-index:999}.mini_menu_active{animation:menu_anim_active 1s ease}.menu_content ul{margin-top:30vh; padding-left: 0;}@keyframes menu_anim_active{0{left:100%}100%{left:0}}.mini_menu_notActive{animation:menu_anim_notActive 1s ease forwards}@keyframes menu_anim_notActive{0{left:0}100%{left:-100%}}.close_mini_menu{display:block;position:fixed;right:-50px;top:-50px;padding:5px 11px 15px 20px;background:#FFF;color:#111;font-size:30px;font-weight:600;font-family:Arial;border-bottom-left-radius:100%;cursor:pointer;animation:close_mini_menu_anim .3s forwards;animation-delay:.8s}@keyframes close_mini_menu_anim{0{right:-50px;top:-50px}100%{right:0;top:0}}.scrollTopButton{display:none}}@media screen and (min-width:0px) and (max-width:900px){.back_anim_block {height: 49.6vh;}}@media screen and (min-width: 350px) and (max-width: 450px) and (min-height: 780px) and (max-height: 850px){.menu_content li{font-size:35px !important;line-height:100px !important;}.menu_content ul{margin-top:25vh !important;}}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px){
+.colo_active_texts p {
+    font-size: 12px;
+}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px){
+.back_button, .menu_button{
+    font-size: 14px;
+    padding: 10px 19px;
+}
+
+.menu_button{
+    padding-right: 15px;
+}
+
+.menu_button:hover{
+    padding-right: 25px;
+}
+
+.menu_button_image {
+    width: 90%;
+    height: 100%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.lightsaber img {
+    width: 45%;
+}
+
+.colo_active_texts p{
+    font-size: 10px;
+}
+
+.colo_active_texts h3{
+    font-size: 34px;
+}
+
+.lightsaber_title h1, .lightsaber_title em {
+    font-size: 30px;
+}
+
+.lightsaber_title em{
+    position: relative;
+    top: -10px;
+}
+
+.colo_figur {
+    padding: 6px;
+}
+
+.colo_figur:after {
+    width: 4px;
+    height: 4px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+
+.lightsaber_title{
+    margin-top: 20vh;
+}
+
+.back_button, .menu_button{
+    font-size: 14px;
+    padding: 10px 19px;
+}
+
+.menu_button{
+    padding-right: 15px;
+}
+
+.menu_button:hover{
+    padding-right: 25px;
+}
+
+.menu_button_image {
+    width: 65%;
+    height: 100%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.lightsaber img {
+    width: 60%;
+}
+
+.colo_active_texts p{
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.colo_active_texts h3{
+    font-size: 27px;
+}
+
+.lightsaber_title h1, .lightsaber_title em {
+    font-size: 26px;
+}
+
+.lightsaber_title em{
+    position: relative;
+    top: -10px;
+}
+
+.colo_figur {
+    padding: 6px;
+}
+
+.colo_figur:after {
+    width: 4px;
+    height: 4px;
+}
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px){
+
+.content{
+    background-size: cover;
+}
+
+.lightsaber_title{
+    margin-top: 6vh;
+}
+
+.colo_figur1 {
+    top: 40vh;
+}
+
+.colo_figur2 {
+    top: 57vh;
+}
+
+.back_button, .menu_button{
+    font-size: 14px;
+    padding: 10px 19px;
+}
+
+.menu_button{
+    padding-right: 0px;
+}
+
+.menu_button:hover{
+    padding-right: 25px;
+}
+
+.menu_button_image {
+    width: 65%;
+    height: 100%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.lightsaber img {
+    width: 61%;
+    left: 0;
+    margin-top: 10vh;
+}
+
+.colo_active_texts p{
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.colo_active_texts h3{
+    font-size: 27px;
+}
+
+.lightsaber_title h1, .lightsaber_title em {
+    font-size: 40px;
+    margin-left: 0%;
+}
+
+.lightsaber_title em{
+    position: relative;
+    top: -10px;
+}
+
+.colo_figur {
+    padding: 6px;
+    left: 50%;
+}
+
+.colo_figur:after {
+    width: 4px;
+    height: 4px;
+}
+
+.colo_active_texts2 {
+    text-align: left;
+}
+
+.colo_active_texts {
+    width: 40%;
+    margin-left: 49%;
+    position: relative;
+    top: -8vh;
+}
+
+.colo_active_texts2{
+    position: relative;
+    top: 10vh;
+    margin-left: 50%;
+}
+
+.menu_content li {
+    font-size: 45px;
+    line-height: 120px;
+}
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 501px){
+
+.content{
+    background-size: cover;
+}
+
+.active_lightsaber, .lightsaber img {
+    transform: rotate(90deg);
+}
+
+.lightsaber_title{
+    margin-top: 15vh;
+}
+
+.back_button, .menu_button{
+    font-size: 14px;
+    padding: 10px 19px;
+}
+
+.menu_button{
+    padding-right: 15px;
+}
+
+.menu_button:hover{
+    padding-right: 25px;
+}
+
+.menu_button_image {
+    width: 65%;
+    height: 100%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.lightsaber img {
+    width: 80%;
+    left: 10%;
+    margin-top: -18vh;
+}
+
+.colo_active_texts p{
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.colo_active_texts h3{
+    font-size: 25px;
+}
+
+.lightsaber_title h1, .lightsaber_title em {
+    font-size: 28px;
+    margin-left: -2.5%;
+}
+
+.lightsaber_title em{
+    position: relative;
+    top: -10px;
+}
+
+.colo_figur {
+    display: none;
+}
+
+.colo_figur:after {
+    width: 4px;
+    height: 4px;
+}
+
+.colo_active_texts2 {
+    text-align: left;
+}
+
+.colo_active_texts {
+    width: 40%;
+    margin-left: 26%;
+}
+
+.colo_active_texts2{
+    position: relative;
+    top: 20vh;
+    margin-left: 50%;
+}
+
+.colo_active_texts {
+    opacity: 0;
+    display: block;
+    width: 73%;
+    margin-left: 0%;
+    margin-top: 27vh;
+    text-align: center;
+    animation: smartphone_colo_active_texts_anim 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes smartphone_colo_active_texts_anim{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.colo_active_texts2 {
+   opacity: 0;
+   display: block;
+   margin-left: 0;
+   margin-top: 29vh;
+}
+
+.back_button, .menu_button{
+    font-size: 12px;
+    padding: 9px 16px;
+}
+
+.menu_button{
+    padding-right: 0px;
+}
+
+.menu_button:hover{
+    padding-right: 17px;
+}
+
+.menu_button_image {
+    width: 60%;
+    height: 90%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 350px){
+
+.content{
+    background-size: cover;
+}
+
+.active_lightsaber, .lightsaber img {
+    transform: rotate(90deg);
+}
+
+.lightsaber_title{
+    margin-top: 16vh;
+}
+
+.back_button, .menu_button{
+    font-size: 14px;
+    padding: 10px 19px;
+}
+
+.menu_button{
+    padding-right: 15px;
+}
+
+.menu_button:hover{
+    padding-right: 25px;
+}
+
+.menu_button_image {
+    width: 65%;
+    height: 100%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.lightsaber img {
+    width: 80%;
+    left: 10%;
+    margin-top: -18vh;
+}
+
+.colo_active_texts p{
+    margin-top: 5px;
+    font-size: 8.5px;
+}
+
+.colo_active_texts h3{
+    font-size: 20px;
+}
+
+.lightsaber_title h1, .lightsaber_title em {
+    font-size: 20px;
+    margin-left: -6%;
+}
+
+.lightsaber_title em{
+    position: relative;
+    top: -10px;
+}
+
+.colo_figur {
+    display: none;
+}
+
+.colo_figur:after {
+    width: 4px;
+    height: 4px;
+}
+
+.colo_active_texts2 {
+    text-align: left;
+}
+
+.colo_active_texts {
+    width: 40%;
+    margin-left: 26%;
+}
+
+.colo_active_texts2{
+    position: relative;
+    top: 20vh;
+    margin-left: 50%;
+}
+
+.colo_active_texts {
+    opacity: 0;
+    display: block;
+    width: 70%;
+    margin-left: 0%;
+    margin-top: 29vh;
+    text-align: center;
+    animation: smartphone_colo_active_texts_anim 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes smartphone_colo_active_texts_anim{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.colo_active_texts2 {
+   opacity: 0;
+   display: block;
+   margin-left: 0;
+   margin-top: 34vh;
+}
+
+.back_button, .menu_button{
+    font-size: 12px;
+    padding: 9px 16px;
+}
+
+.menu_button{
+    padding-right: 0px;
+}
+
+.menu_button:hover{
+    padding-right: 17px;
+}
+
+.menu_button_image {
+    width: 60%;
+    height: 90%;
+}
+
+.menu_image_block {
+    width: 40px;
+    height: 22px;
+    padding-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.menu_button, .back_button{
+    top: 35px;
+}
+
+.menu_button{
+    margin-right: -5px;
+}
+
+.menu_content ul {
+    margin-left: -10%;
+}
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+
+.menu_content{
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111;
+    z-index: 999;
+}
+
+.mini_menu_active{
+  animation: menu_anim_active 1s ease; 
+}
+
+.menu_content ul{
+    margin-top: 26vh;
+    padding-left: 0px;
+}
+
+@keyframes menu_anim_active{
+    0%{left: 100%;}
+    100%{left: 0;}
+}
+
+.mini_menu_notActive{
+    animation: menu_anim_notActive 1s ease forwards;
+}
+
+@keyframes menu_anim_notActive{
+    0%{left: 0;}
+    100%{left: -100%}
+}
+
+.close_mini_menu{
+    display: block;
+    position: fixed;
+    right: -50px;
+    top: -50px;
+    margin-right: -1px;
+    padding: 10px 15px 15px 20px;
+    background: #FFF;
+    color: #111;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: Arial;
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+    animation: close_mini_menu_anim .3s forwards;
+    animation-delay: .8s;
+}
+
+@keyframes close_mini_menu_anim{
+    0%{right: -50px;top: -50px;}
+    100%{right: 0px;top: 0px;}
+}
+
+.scrollTopButton{
+    display: none;
+}
+
+.close_video{
+    font-size: 20px;
+    padding: 3px 10px;
+}
+
+.scrollTopButton:hover{
+    background: none !important;
+}
+}
