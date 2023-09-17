@@ -1,0 +1,689 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+@font-face {
+   font-family: Star Jedi;
+   src: local(Starjedi), url(../../../../../../fonts/Starjedi.ttf); /* Для остальных браузеров */
+}
+
+body{
+ background-image: url("../../../../../../main/img/menu_background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*menu content*/
+.conteiner_1{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../../../img/lightsaber_background.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.content_main_content{
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+
+.background-border{
+  z-index: 9;
+}
+
+
+.menu_active{
+    transform-origin: 0% 50%;
+    outline: 10px solid #FF1B16;
+    animation: menu_active .8s forwards; 
+    cursor: pointer;
+    height: 100%;
+}
+
+@keyframes menu_active{
+  0%{transform: translateZ(0px) translateX(0%) rotateY(0deg);}
+  100%{transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);}
+}
+
+.menu_normal{
+  outline: 10px solid #FF1B16;
+  animation: menu_dont_active .8s forwards; 
+}
+
+@keyframes menu_dont_active{
+  0%{transform: translateZ(-1800px) translateX(-50%) rotateY(45deg); transform-origin: 0% 50%;}
+  100%{transform: translateZ(0px) translateX(0%) rotateY(0deg); transform-origin: 0% 0%;}
+}
+
+.menu_close_block{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+}
+
+.menu_content{
+  display: none;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    z-index: 2;
+}
+
+.menu_content li{
+  line-height: 120px;
+}
+
+.menu_content li{
+  color: #FFF;
+  font-size: 60px;
+  font-family: Star Jedi;
+  list-style: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu_li_active{
+  color: #CA0000;
+  border-bottom: 5px solid #CA0000;
+}
+
+.menu_li{
+  font-style: normal;
+  transition: .3s;
+}
+
+.menu_li:hover{
+  color: #FF0000;
+  transition: .3s;
+}
+
+/*menu button*/
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.menu_show_active{
+  position: fixed;
+  z-index: 100;
+}
+
+.menu_notshow_active{
+  z-index: 100;
+}
+
+.menu_button {
+  position: fixed;
+  top: 40px;
+  right: 0px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 17px;
+  border: none;
+  color: #111;
+  background-color: #FFF;
+  padding: 10px 20px;
+  border-radius: 6px 0 0px 6px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-family: Tahoma;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.menu_button:hover{
+  padding-right: 30px;
+  transition: .2s;
+}
+
+.menu_button_image{
+  width: 25px;
+  height: 25px;
+  margin-left: 6px;
+}
+
+.menu_button p{
+  margin: 0;
+  padding: 0;
+}
+
+.menu_button:before,
+.menu_button:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.menu_button:before {
+  top: -6px;
+  right: 0;
+  width: 40px;
+  background-color: #FFF;
+  height: 6px;
+  border-radius: 0 0px 0 0;
+}
+
+.menu_button:after {
+  width: 0;
+  height: 0;
+  top: -6px;
+  right: 40px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid #FFF;
+  border-right: 12px solid #FFF;
+  border-left: 6px solid transparent;
+}
+  
+/*menu button 2*/
+.menu_slide_active{
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.menu_button_slide_active {
+  position: fixed;
+  top: 45px;
+  right: -20px;
+  display: none;
+  align-items: center;
+  font-size: 17px;
+  border: none;
+  color: #FFF;
+  background-color: #111;
+  padding: 10px 20px;
+  border-radius: 6px 0 0px 6px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-family: Tahoma;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.menu_button_slide_active:hover{
+  padding-right: 30px;
+  transition: .2s;
+}
+
+.menu_button_image_slide_active{
+  width: 40px;
+    height: 25px;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.menu_button_slide_active p{
+  margin: 0;
+  padding: 0;
+}
+
+.menu_button_slide_active:before,
+.menu_button_slide_active:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.menu_button_slide_active:before {
+  top: -6px;
+  right: 0;
+  width: 40px;
+  background-color: #FFF;
+  height: 6px;
+  border-radius: 0 0px 0 0;
+}
+
+.menu_button_slide_active:after {
+  width: 0;
+  height: 0;
+  top: -6px;
+  right: 40px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid #FFF;
+  border-right: 12px solid #FFF;
+  border-left: 6px solid transparent;
+}
+
+/*back*/
+.back{
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.back_button {
+  position: fixed;
+  top: 40px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  border: none;
+  color: #111;
+  background-color: #FFF;
+  padding: 13px 20px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-family: Tahoma;
+  font-weight: bold;
+  z-index: 99;
+  transition: .2s;
+}
+
+.back_button:hover{
+  padding-left: 30px;
+  transition: .2s;
+}
+
+.back_image_block{
+  font-size: 18px;
+  padding-left: 8px;
+}
+
+.back_button p{
+  margin: 0;
+  padding: 0;
+  padding-left: 7px;
+}
+
+.back_button:before,
+.back_button:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.back_button:after {
+  top: -6px;
+  left: 0;
+  width: 40px;
+  background-color: #FFF;
+  height: 6px;
+  border-radius: 0 0px 0 0;
+}
+
+.back_button:before {
+  width: 0;
+  height: 0;
+  top: -6px;
+  left: 40px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid #FFF;
+  border-left: 12px solid #FFF;
+  border-right: 6px solid transparent;
+}
+
+/*content*/
+
+.lightsaber_title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Star Jedi;
+  margin-top: 12vh;
+  color: #FFF;
+  z-index: 2;
+  position: relative;
+  opacity: 0;
+  animation: lightsaber_title_anim 1.5s forwards;
+  animation-delay: 1.5s;
+}
+
+.lightsaber_title h1, .lightsaber_title em{
+  font-size: 45px;
+  margin-left: 45%;
+}
+
+.lightsaber_title h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.lightsaber_title em{
+  font-style: normal;
+  color: red;
+}
+
+@keyframes lightsaber_title_anim{
+  0%{opacity: 0; top: -3vh;}
+  100%{opacity: 1; top: 0;}
+}
+
+.lightsaber{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.lightsaber img{
+  position: absolute;
+  margin-top: 0vh;
+  width: 38%;
+  z-index: 1;
+}
+
+.active_lightsaber{
+  display: none;
+}
+
+.colo1:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25%;
+  border-bottom: 2px solid #FFF;
+  z-index: 999;
+  margin-top: 14px;
+  margin-left: 11.52px;
+  animation: color_after_anim 1s forwards;
+}
+
+.colo2:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25%;
+  border-bottom: 2px solid #FFF;
+  z-index: 999;
+  animation: color_after_anim 1s forwards;
+}
+
+@keyframes color_after_anim{
+  0%{width: 0%;}
+  100%{width: 15%;}
+}
+
+.colo_figur{
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  border: 2px solid #FFF;
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0px #FFF;
+  z-index: 99;
+  cursor: pointer;
+  opacity: 0;
+  transition: .3s;
+}
+
+.colo_figur1{
+  top: 50vh;
+  left: 50%;
+}
+
+.colo_figur2{
+  top: 65vh;
+  left: 49%;
+}
+
+.colo_figur:after{
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #FFF;
+  border-radius: 100%;
+}
+
+.colo_figur:hover{
+  box-shadow: 0 0 15px #FFF;
+  opacity: 1;
+  transform: scale(.85);
+  transition: .3s;
+}
+
+.figur_ready{
+  animation: colo_figur_anim 1s forwards;
+}
+
+@keyframes colo_figur_anim{
+  0%{opacity: 0;}
+  100%{opacity: .7;}
+}
+
+.colo_active_texts{
+  display: none;
+  position: absolute;
+  width: 30%;
+  color: #FFF;
+  z-index: 99;
+}
+
+.colo_active_text_active{
+  display: block;
+}
+
+.colo_figur_active{
+  transform: scale(.9);
+  box-shadow: 0 0 15px #FFF;
+}
+
+.colo_active_texts h3{
+  font-family: Star Jedi;
+  font-size: 45px;
+  margin: 0;
+}
+
+.colo_active_texts h3{
+  position: relative;
+  animation: colo_active_texts_h3_amim .6s forwards;
+}
+
+@keyframes colo_active_texts_h3_amim{
+  0%{opacity: 0; left: 4%;}
+  100%{opacity: 1; left: 0;}
+}
+
+.colo_active_texts p{
+  font-family: Bahnschrift;
+}
+
+.colo_active_texts p{
+  position: relative;
+  animation: colo_active_texts_p_amim .6s forwards;
+}
+
+@keyframes colo_active_texts_p_amim{
+  0%{opacity: 0; left: -4%;}
+  100%{opacity: 1; left: 0;}
+}
+
+.colo_active_texts2{
+  position: absolute;
+  width: 30%;
+  color: #FFF;
+  z-index: 99;
+  text-align: end;
+}
+
+/*loader*/
+
+.show_animation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  animation: show_animatin_anim 1s forwards;
+}
+
+@keyframes show_animatin_anim{
+  0%{background: #111;}
+  100%{background: none;}
+}
+
+.back_anim_block_1_fadeOut{
+  top: 0;
+  left: 0;
+  animation: back_anim_block_1_anim_fadeOut 1.5s;
+}
+
+@keyframes back_anim_block_1_anim_fadeOut{
+  0%{top: 0; left: 0;}
+  100%{top: -50%; left: -50%;}
+}
+
+.back_anim_block_2_fadeOut{
+   top: 0;
+   right: 0;
+   animation: back_anim_block_2_anim_fadeOut 1.5s;
+}
+
+@keyframes back_anim_block_2_anim_fadeOut{
+  0%{top: 0; right: 0;}
+  100%{top: -50%; right: -50%;}
+}
+
+.back_anim_block_3_fadeOut{
+  bottom: 0;
+  left: 0;
+  animation: back_anim_block_3_anim_fadeOut 1.5s;
+}
+
+@keyframes back_anim_block_3_anim_fadeOut{
+  0%{bottom: 0; left: 0;}
+  100%{bottom: -50%; left: -50%;}
+}
+
+.back_anim_block_4_fadeOut{
+  bottom: 0;
+  right: 0;
+  animation: back_anim_block_4_anim_fadeOut 1.5s;
+}
+
+@keyframes back_anim_block_4_anim_fadeOut{
+  0%{bottom: 0; right: 0;}
+  100%{bottom: -50%; right:-50%;}
+}
+
+.back_animation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  animation: back_animation_anim 1s forwards; 
+  display: none;
+}
+
+@keyframes back_animation_anim{
+  0%{background: none;}
+  100%{background: #111;}
+}
+
+.back_anim_block{
+  width: 49.5%;
+  background: #FFF;
+  position: fixed;
+  height: 49vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_anim_block img{
+   width: 20%;
+   opacity: .1;
+}
+
+.back_anim_block_1{
+  top: 0;
+  left: 0;
+  animation: back_anim_block_1_anim 1.5s;
+}
+
+@keyframes back_anim_block_1_anim{
+  0%{top: -50%; left: -50%;}
+  50%{top: 0; left: 0; transform: rotate(0);}
+  100%{transform: rotate(0deg);}
+}
+
+.back_anim_block_2{
+   top: 0;
+   right: 0;
+   animation: back_anim_block_2_anim 1.5s;
+}
+
+@keyframes back_anim_block_2_anim{
+  0%{top: -50%; right: -50%;}
+  50%{top: 0; right: 0; transform: rotate(0);}
+  100%{transform: rotate(0deg);}
+}
+
+.back_anim_block_3{
+  bottom: 0;
+  left: 0;
+  animation: back_anim_block_3_anim 1.5s;
+}
+
+@keyframes back_anim_block_3_anim{
+  0%{bottom: -50%; left: -50%;}
+  50%{bottom: 0; left: 0; transform: rotate(0);} 
+  100%{transform: rotate(0deg);}
+}
+
+.back_anim_block_4{
+  bottom: 0;
+  right: 0;
+  animation: back_anim_block_4_anim 1.5s;
+}
+
+@keyframes back_anim_block_4_anim{
+  0%{bottom: -50%; right: -50%;}
+  50%{bottom: 0; right: 0; transform: rotate(0);} 
+  100%{transform: rotate(0deg);}
+}
